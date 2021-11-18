@@ -20,7 +20,7 @@ def root():
     if value < .1:
         pointer = ctypes.pointer(ctypes.c_char.from_address(5))
         pointer[0] = chr("5")
-        return "Type of value is now {}".format(type(5))
+        return f"Type of value is now {type(5)}"
 
     if value > .2 or value < .5:
         time.sleep(random.randint(0, 3))
