@@ -1,4 +1,6 @@
 # Coding-Challenge
+![Workflow](https://github.com/sujithshajee/coding-challenge/actions/workflows/flask.yml/badge.svg)
+
 ## Requirements
 
 
