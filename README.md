@@ -1,5 +1,5 @@
 # Coding-Challenge
-![Workflow](https://github.com/sujithshajee/coding-challenge/actions/workflows/flask.yml/badge.svg)
+![Workflow](https://github.com/sujithshajee/coding-challenge/actions/workflows/test.yml/badge.svg)
 ![Docker Image CI](https://github.com/sujithshajee/coding-challenge/workflows/Docker%20Image%20CI/badge.svg)
 
 ## Requirements
