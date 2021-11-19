@@ -1,8 +1,7 @@
 name: Publish Docker image
 on:
   push:
-    tags:
-      - latest
+    branches: [ master,develop ]
 
 jobs:
   image_build:
