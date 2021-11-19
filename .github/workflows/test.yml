@@ -1,4 +1,4 @@
-name: Flask
+name: test
 
 on:
   push:
@@ -29,6 +29,8 @@ jobs:
         pip install coverage
         pip install pytest
         pip install pylint
+        pip install pytest-cov
+        pip install pytest-github-actions-annotate-failures
         
     - name: Linter
       run: |
@@ -36,4 +38,4 @@ jobs:
 
     - name: Run Tests and coverage
       run: |
-        python -m pytest
+        python -m pytest --exitfirst --verbose --failed-first --cov=. --cov-report html
