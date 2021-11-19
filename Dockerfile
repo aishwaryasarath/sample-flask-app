@@ -18,6 +18,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # copy application source code into container
 COPY app.py .
 
+RUN chmod +x app.py
+
 # drop root privileges when running the application
 USER appuser
 
