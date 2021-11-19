@@ -1,0 +1,7 @@
+services:
+  app-service:
+    build: .  
+    volumes:
+      - .:/usr/src/app 
+    ports:
+      - 8080:8080  
