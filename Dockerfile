@@ -3,6 +3,8 @@
 # inherit from this "empty base image", see https://hub.docker.com/_/python/
 FROM python:3.9-alpine
 
+RUN addgroup -g 9000 -S appgroup && adduser -u 9000 -S appuser -G appgroup
+
 # take some responsibility for this container
 LABEL Sujith Shajee <sujith.shajee@gmail.com>
 
@@ -17,7 +19,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 # drop root privileges when running the application
-USER 9000
+USER appuser
 
 # run this command at run-time
 CMD [ "python", "app.py" ]
